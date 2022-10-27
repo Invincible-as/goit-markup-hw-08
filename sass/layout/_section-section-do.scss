@@ -1,0 +1,43 @@
+.section-do {
+    background-color: var(--stock-color);
+
+    padding-bottom: 94px;
+}
+
+
+.section-list__do {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.section-list-do__item {
+    flex-basis: calc((100% - 60px) / 3);
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+.section-do__thumb {
+
+    position: relative;
+
+}
+
+.section-do__label {
+
+    @extend %aling;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--stock-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+
+}

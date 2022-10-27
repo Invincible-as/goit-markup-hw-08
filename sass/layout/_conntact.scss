@@ -1,0 +1,28 @@
+.contact-phone-number {
+    @extend %aling;
+    column-gap: 10px;
+}
+
+ .contact-phone-number {
+    color: var(--titel-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+}
+
+.contact-icon {
+    fill: currentColor;
+}
+
+.mail-list-item-link {
+    fill: var(--titel-text-color);
+}
+

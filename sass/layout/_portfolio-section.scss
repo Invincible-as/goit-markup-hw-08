@@ -1,0 +1,152 @@
+.portfolio__title {
+    color: var(--primery-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+
+
+
+}
+
+.portfolio-button {
+    color: var(--primery-text-color);
+    background-color: var(--tem-color);
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    border-radius: 4px;
+    border: transparent;
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+            color: var(--stock-color);
+            background-color: var(--accent-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+
+}
+
+
+
+
+
+
+.portfolio__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.portfolio-button {
+    padding: 6px 25px;
+}
+
+.our-projects__title {
+    color: var(--primery-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+
+
+}
+
+.our-projects__list {
+
+    color: var(--titel-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+
+
+
+
+}
+
+.our-projects__link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: box-shadow var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}
+
+
+
+
+.our__projects {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+
+
+.our-projects__item {
+    flex-basis: calc((100% - 60px) / 3);
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+.our-projects__title {
+    margin-bottom: 4px;
+
+}
+
+.our-projects__lines {
+
+    padding: 20px 24px 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+
+}
+
+.our-projects__thumb {
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+
+.our-projects-label {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    color: #FFFFFF;
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    overflow: auto;
+    transform: translateY(101%);
+    transition: transform var(--transition-dur-and-func);
+
+    .our-projects__link:hover &,
+    .our-projects__link:focus & {
+            transform: translateY(0%);
+    
+        }
+
+}
+
