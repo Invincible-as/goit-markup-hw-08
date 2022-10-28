@@ -172,7 +172,18 @@
     <ul class="section-list__do  list">
         <li class="section-list-do__item red">
         <div class="section-do__thumb">
-            <img class="section-do-img" src="./images/img-1.jpg" alt="ноутбук" width="370"> 
+            <picture>
+                <source srcset="./images/img-3.jpg" media="(min-width: 1200px)">
+
+                <source srcset="./images/img-2.jpg 1x, ./images/img-1@2x.jpg 2x" media="(min-width: 768px)">
+                
+                <source srcset="./images/unknown2.jpg" media="(max-width: 767px)">
+
+                <img class="section-do-img" src="./images/img-1.jpg" alt="ноутбук" width="370">
+            
+            </picture>
+           
+            <!-- srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x" -->
             <p class="section-do__label">Десктопні додатки</p>
         </div>
         </li>

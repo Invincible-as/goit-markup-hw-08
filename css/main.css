@@ -495,14 +495,19 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--hero-color);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay)), to(var(--overlay))), url(../images/img_hero.jpg);
-  background-image: linear-gradient(to right, var(--overlay), var(--overlay)), url(../images/img_hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay)), to(var(--overlay))), url("../images/img_hero@2x.jpg");
+  background-image: linear-gradient(to right, var(--overlay), var(--overlay)), url("../images/img_hero@2x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-clip: border-box;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url("../images/img_hero@2x.jpg");
+  }
+}
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
