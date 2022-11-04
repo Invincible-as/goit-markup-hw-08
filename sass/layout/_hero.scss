@@ -18,28 +18,33 @@
 
     }
 
+        @media screen and (max-width: 767px) {
+            background-image: url('../images/img_hero-mobile.jpg');
+    
+        }
+
 
 }
 
 // 767 Mobile + 
-// §
-// @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-// screen and (min-resolution: 192dpi) and (max-width: 767px),
-// screen and (min-resolution: 2dppx) and (max-width: 767px) {
-//     .hero {
-//         background-image: url();
-//     }
-// }
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+        background-image: url('../images/img_hero-mobile@2x.jpg');
+    }
+}
 
 // 768 Tablet +
 
-// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-// screen and (min-resolution: 192dpi) and (min-width: 768px),
-// screen and (min-resolution: 2dppx) and (min-width: 768px) {
-//     .hero {
-//         background-image: url();
-//     }
-// }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+        background-image: url('../images/img_hero-tablet@2x.jpg');
+    }
+}
 
 // 1200 Desctop + 
 
