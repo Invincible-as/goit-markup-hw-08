@@ -418,7 +418,7 @@ address {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  min-height: 100%;
+  min-height: 99%;
   position: relative;
   padding-left: 40px;
 }
@@ -478,6 +478,9 @@ address {
   font-size: 34px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.mobile-menu-contact-list-item-phone_link {
   color: var(--accent-color);
 }
 
@@ -500,7 +503,7 @@ address {
   display: -ms-flexbox;
   display: flex;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
