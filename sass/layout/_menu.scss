@@ -1,72 +1,72 @@
-.menu .menu__link {
-    position: relative;
-    color: #212121;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1;
-    letter-spacing: 0.02em;
-    transition: color var(--transition-dur-and-func);
+// .menu .menu__link {
+//     position: relative;
+//     color: #212121;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1;
+//     letter-spacing: 0.02em;
+//     transition: color var(--transition-dur-and-func);
 
-}
+// }
 
-.menu .menu__link:hover,
-.menu .menu__link:focus {
-    color: var(--accent-color);
-
-
-}
-
-.menu .link-current {
-
-    color: var(--accent-color);
-
-    &::after {
-        position: absolute;
-        display: block;
-        content: '';
-        width: 45px;
-        height: 4px;
-        margin-top: 25px;
-        background: #2196F3;
-        border-radius: 2px;
-    }
+// .menu .menu__link:hover,
+// .menu .menu__link:focus {
+//     color: var(--accent-color);
 
 
-}
+// }
 
-.menu .link-current-portfolio {
-    color: var(--accent-color);
+// .menu .link-current {
 
-    &::after {
-            position: absolute;
-            display: block;
-            content: '';
-            width: 73px;
-            height: 4px;
-            margin-top: 25px;
-            background: #2196F3;
-            border-radius: 2px;
+//     color: var(--accent-color);
+
+//     &::after {
+//         position: absolute;
+//         display: block;
+//         content: '';
+//         width: 45px;
+//         height: 4px;
+//         margin-top: 25px;
+//         background: #2196F3;
+//         border-radius: 2px;
+//     }
+
+
+// }
+
+// .menu .link-current-portfolio {
+//     color: var(--accent-color);
+
+//     &::after {
+//             position: absolute;
+//             display: block;
+//             content: '';
+//             width: 73px;
+//             height: 4px;
+//             margin-top: 25px;
+//             background: #2196F3;
+//             border-radius: 2px;
     
-        }
+//         }
 
-}
-
-
+// }
 
 
 
-.menu {
-    align-items: center;
-    display: flex;
-    column-gap: 50px;
-}
 
-.contact {
-    display: flex;
-    column-gap: 28px;
-}
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+// .menu {
+//     align-items: center;
+//     display: flex;
+//     column-gap: 50px;
+// }
+
+// .contact {
+//     display: flex;
+//     column-gap: 28px;
+// }
+
+// img {
+//     max-width: 100%;
+//     height: auto;
+// }

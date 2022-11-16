@@ -1,51 +1,56 @@
-    <!DOCTYPE html>
-    <html lang="uk">
-        
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Студія</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap"
-            rel="stylesheet">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-        <link rel="stylesheet" href="./css/main.min.css">
-    </head>
-    <body class="body-page">
+<!DOCTYPE html>
+<html lang="uk">
 
-        <!--Шапка-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студія</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
 
-        <header class="page-header">
-            <div class="container page-header-container">
+<body class="body-page">
+
+    <!--Шапка-->
+
+    <header class="page-header">
+        <div class="container page-header__container">
 
             <nav class="page-nav">
 
-            <a href="./index.html" class="logo-img "><span class="logo-web">Web</span>Studio</a>
+                <a href="./index.html" class="logo-img "><span class="logo-web">Web</span>Studio</a>
 
-            
 
-            <ul class="menu list">
-                <li class="">
-                    <a href="./index.html" 
-                    class="menu__link link-current lines">Студія </a>
-                </li>
-                <li class="menu__item">
-                    <a href="./portfolio.html"
-                     class="menu__link lines">Портфоліо</a>
-                </li>
-                <li class="menu__item">
-                    <a href="" 
-                    class="menu__link lines">Контакти</a>
-                </li>
+
+                <ul class="menu list">
+                    <li class="">
+                        <a href="./index.html" class="menu__link link-current lines">Студія </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./portfolio.html" class="menu__link lines">Портфоліо</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link lines">Контакти</a>
+                    </li>
 
                 </ul>
 
-                </nav>
-                
+            </nav>
+
+            <button type="button" class="open-mobile-menu-btn" data-menu-open>
+                <svg class="open-mobile-menu-btn_icon">
+                    <use href="./images/sprite/symbol-defs.svg#icon-burger"></use>
+                </svg>
+            </button>
+
 
             <ul class="contact list">
 
@@ -56,30 +61,68 @@
                         </svg>
                         info@devstudio.com</a>
                 </li>
-            
+
                 <li>
-                
+
                     <a href="tel:+380961111111" class="contact-phone-number lines ">
                         <svg class="contact-icon phone-list-item-link" width="10" height="16">
                             <use href="./images/sprite/symbol-defs.svg#icon-smartphone-page-header"></use>
                         </svg>
                         +38 096 111 11 11</a>
-                    
+
                 </li>
-                
+
 
             </ul>
-            </div>  
+        </div>
 
-        
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu_close-btn" data-menu-close>
+                    <svg class="mobile-menu_close-icon">
+                        <use href="./images/sprite/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
 
-        </header>
+                <ul class="mobile-menu_list list">
+                    <li class="mobile-menu-list_item" href="./index.html">Студія</li>
+                    <li class="mobile-menu-list_item" href="./portfolio.html">Портфоліо</li>
+                    <li class="mobile-menu-list_item" href="">Контакты</li>
+                </ul>
 
-        <!--уникальный контент страницы-->
-        <main>
+                <ul class="mobile-menu_contact-list">
+                    <li class="mobile-menu-contact_list-item mobile-menu-contact-list-item_phone list"><a
+                            href="tel:+380961111111"></a>+38 096 111 11 11
+                    </li>
+                    <li class="mobile-menu-contact_list-item mobile-menu-contact-list-item_email list lines"><a
+                            class="mobile-menu-contact-list-item-email_link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
 
-    <!--Герой-->
-    <section class="hero">
+                <ul class="mobile-menu_social-list list">
+                    <li class="mobile-menu-social-list_item"><a class="mobile-menu-social-list-item_link lines"
+                            href="">Instagram</a></li>
+                    <li class="mobile-menu-social-list_item"><a class="mobile-menu-social-list-item_link lines"
+                            href="">Twitter</a></li>
+                    <li class="mobile-menu-social-list_item"><a class="mobile-menu-social-list-item_link lines"
+                            href="">Facebook</a></li>
+                    <li class="mobile-menu-social-list_item"><a
+                            class="mobile-menu-social-list-item_link mobile-menu-social-list-item_last  lines"
+                            href="">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <!--уникальный контент страницы-->
+    <main>
+
+        <!--Герой-->
+        <!-- <section class="hero">
 
 
         <div class="container page-hero-container">
@@ -90,11 +133,11 @@
 
     </div>
 
-    </section>
+    </section> -->
 
-    <!--Предложение-->
+        <!--Предложение-->
 
-    <section class="section section__sentence">
+        <!-- <section class="section section__sentence">
     <div class="container container-section__sentence">
 
 
@@ -160,11 +203,11 @@
         </ul>
         </div>
 
-    </section>
+    </section> -->
 
 
-    <!--Чем занимается студия-->
-    <section class="section-do " >
+        <!--Чем занимается студия-->
+        <!-- <section class="section-do " >
     <div class="container container-section__do">
     <h2 class="section-titel">Чим ми займаємося</h2>
 
@@ -183,19 +226,16 @@
                 <source 
                 srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x" 
                 media="(min-width: 1200px)"
-                >
+                > -->
 
-               
 
-                <!-- <source srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x" media="(min-width: 768px)">
-                
-                <source srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x"media="(max-width: 767px)"> -->
 
-                <img class="section-do-img" src="./images/img-1.jpg" alt="ноутбук" width="370">
-            
-            </picture>
+
+        <!-- <img class="section-do-img" src="./images/img-1.jpg" alt="ноутбук" width="370"> -->
+
+        <!-- </picture>
            
-            <!-- srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x" -->
+           
             <p class="section-do__label">Десктопні додатки</p>
         </div>
         </li>
@@ -248,10 +288,10 @@
 
     </div>
 
-    </section>
+    </section> -->
 
-    <!--Команда-->
-    <section class="section section__team">
+        <!--Команда-->
+        <!-- <section class="section section__team">
 
         <div class="container">
 
@@ -260,31 +300,31 @@
         <ul class="section-team__list  list">
             <li class="section-team-list__link">
 
-                <picture>
+                <picture> -->
 
-                    <!-- 1200 - Desktop -->
+        <!-- 1200 - Desktop -->
 
-                    <source srcset="./images/unknown-desktop.webp 1x, ./images/unknown-desktop@2x.webp 2x," 
+        <!-- <source srcset="./images/unknown-desktop.webp 1x, ./images/unknown-desktop@2x.webp 2x," 
                     media="(min-width: 1200px)"
                     type="image/webp">
 
                     <source srcset="./images/unknown-desktop.jpg 1x, ./images/unknown-desktop@2x.jpg 2x," 
                     media="(min-width: 1200px)"
-                    >
+                    > -->
 
-                    <!-- 768 - Tablet -->
+        <!-- 768 - Tablet -->
 
-                    <source srcset="./images/unknown-tablet.webp 1x, ./images/unknown-tablet@2x.webp 2x," 
+        <!-- <source srcset="./images/unknown-tablet.webp 1x, ./images/unknown-tablet@2x.webp 2x," 
                     media="(min-width: 768px)"
                     type="image/webp">
                     
 
                     <source srcset="./images/unknown-tablet.jpg 1x, ./images/unknown-tablet@2x.jpg 2x" 
-                    media="(min-width: 768px)">
+                    media="(min-width: 768px)"> -->
 
-                    <!-- 767 - Mobile -->
+        <!-- 767 - Mobile -->
 
-                    <source srcset="./images/unknown-mobile.webp 1x, ./images/unknown-mobile@2x.webp 2x," 
+        <!-- <source srcset="./images/unknown-mobile.webp 1x, ./images/unknown-mobile@2x.webp 2x," 
                     media="(max-width: 767px)"
                     type="image/webp">
 
@@ -350,30 +390,30 @@
 
         <li class="section-team-list__link">
 
-            <picture>
+            <picture> -->
 
-                <!-- 1200 - Desktop -->
-                
+        <!-- 1200 - Desktop -->
+        <!--                 
                 <source srcset="./images/unknown2-desktop.webp 1x, ./images/unknown2-desktop@2x.webp 2x," 
                 media="(min-width: 1200px)"
                 type="image/webp">
                 
                 <source srcset="./images/unknown2-desktop.jpg 1x, ./images/unknown2-desktop@2x.jpg 2x," 
-                media="(min-width: 1200px)">
-                
-                <!-- 768 - Tablet -->
-                
-                <source srcset="./images/unknown2-tablet.webp 1x, ./images/unknown2-tablet@2x.webp 2x," 
+                media="(min-width: 1200px)"> -->
+
+        <!-- 768 - Tablet -->
+
+        <!-- <source srcset="./images/unknown2-tablet.webp 1x, ./images/unknown2-tablet@2x.webp 2x," 
                 media="(min-width: 768px)"
-                type="image/webp">
-                
-                
-                <source srcset="./images/unknown2-tablet.jpg 1x, ./images/unknown2-tablet@2x.jpg 2x" 
-                media="(min-width: 768px)">
-                
-                <!-- 767 - Mobile -->
-                
-                <source srcset="./images/unknown2-mobile.webp 1x, ./images/unknown2-mobile@2x.webp 2x," 
+                type="image/webp"> -->
+
+
+        <!-- <source srcset="./images/unknown2-tablet.jpg 1x, ./images/unknown2-tablet@2x.jpg 2x" 
+                media="(min-width: 768px)"> -->
+
+        <!-- 767 - Mobile -->
+
+        <!-- <source srcset="./images/unknown2-mobile.webp 1x, ./images/unknown2-mobile@2x.webp 2x," 
                 media="(max-width: 767px)"
                 type="image/webp">
                 
@@ -432,30 +472,30 @@
 
         <li class="section-team-list__link">
 
-            <picture>
+            <picture> -->
 
-                <!-- 1200 - Desktop -->
-                
-                <source srcset="./images/unknown3-desktop.webp 1x, ./images/unknown3-desktop@2x.webp 2x," 
+        <!-- 1200 - Desktop -->
+
+        <!-- <source srcset="./images/unknown3-desktop.webp 1x, ./images/unknown3-desktop@2x.webp 2x," 
                 media="(min-width: 1200px)"
                 type="image/webp">
                 
                 <source srcset="./images/unknown3-desktop.jpg 1x, ./images/unknown3-desktop@2x.jpg 2x," 
-                media="(min-width: 1200px)">
-                
-                <!-- 768 - Tablet -->
-                
-                <source srcset="./images/unknown3-tablet.webp 1x, ./images/unknown3-tablet@2x.webp 2x," 
+                media="(min-width: 1200px)"> -->
+
+        <!-- 768 - Tablet -->
+
+        <!-- <source srcset="./images/unknown3-tablet.webp 1x, ./images/unknown3-tablet@2x.webp 2x," 
                 media="(min-width: 768px)"
                 type="image/webp">
                 
                 
                 <source srcset="./images/unknown3-tablet.jpg 1x, ./images/unknown3-tablet@2x.jpg 2x" 
-                media="(min-width: 768px)">
-                
-                <!-- 767 - Mobile -->
-                
-                <source srcset="./images/unknown3-mobile.webp 1x, ./images/unknown3-mobile@2x.webp 2x," 
+                media="(min-width: 768px)"> -->
+
+        <!-- 767 - Mobile -->
+
+        <!-- <source srcset="./images/unknown3-mobile.webp 1x, ./images/unknown3-mobile@2x.webp 2x," 
                 media="(max-width: 767px)"
                 type="image/webp">
                 
@@ -515,32 +555,32 @@
 
         <li class="section-team-list__link">
     
-            <picture>
+            <picture> -->
 
-                <!-- 1200 - Desktop -->
-                
-                <source srcset="./images/unknown4-desktop.webp 1x, ./images/unknown4-desktop@2x.webp 2x," 
+        <!-- 1200 - Desktop -->
+
+        <!-- <source srcset="./images/unknown4-desktop.webp 1x, ./images/unknown4-desktop@2x.webp 2x," 
                 media="(min-width: 1200px)"
                 type="image/webp"
                 >
                 
                 <source srcset="./images/unknown4-desktop.jpg 1x, ./images/unknown4-desktop@2x.jpg 2x," 
                 media="(min-width: 1200px)"
-                >
-                
-                <!-- 768 - Tablet -->
-                
-                <source srcset="./images/unknown4-tablet.webp 1x, ./images/unknown4-tablet@2x.webp 2x," 
+                > -->
+
+        <!-- 768 - Tablet -->
+
+        <!-- <source srcset="./images/unknown4-tablet.webp 1x, ./images/unknown4-tablet@2x.webp 2x," 
                 media="(min-width: 768px)"
                 type="image/webp">
                 
                 
                 <source srcset="./images/unknown4-tablet.jpg 1x, ./images/unknown4-tablet@2x.jpg 2x" 
                 media="(min-width: 768px)">
-                
-                <!-- 767 - Mobile -->
-                
-                <source srcset="./images/unknown4-mobile.webp 1x, ./images/unknown4-mobile@2x.webp 2x," media="(max-width: 767px)"
+                 -->
+        <!-- 767 - Mobile -->
+
+        <!-- <source srcset="./images/unknown4-mobile.webp 1x, ./images/unknown4-mobile@2x.webp 2x," media="(max-width: 767px)"
                     type="image/webp">
                 
                 <source srcset="./images/unknown4-mobile.jpg 1x, ./images/unknown4-mobile@2x.jpg 2x" 
@@ -602,10 +642,10 @@
 
     </section>
 
-    <section class="section clients">
+    <section class="section clients"> -->
 
         <!--Постійні клієнти-->
-        <div class="container">
+        <!-- <div class="container">
 
     <h2 class="clients__titel">Постійні клієнти</h2>
 
@@ -676,9 +716,9 @@
 
     </div>
 
-    </section>
+    </section> -->
 
-    </main>
+        <!-- </main>
 
     <footer class="footer container-footer">
 
@@ -867,7 +907,10 @@
             </form>
         </div>
     </div>
+    
 
-        <script src="./js/modal.js"></script>
-    </body>
-    </html>
+        <script src="./js/modal.js"></script> -->
+        <script src="./js/menu.js"></script>
+</body>
+
+</html>
