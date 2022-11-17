@@ -1,3 +1,54 @@
+// 768 - 1200 px
+
+
+@media screen and (min-width: 768px) {
+
+    .contact-phone-number {
+        display: flex;
+        gap: 8px;
+    }
+
+    .contact-phone-number {
+        color: var(--titel-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+
+    }
+
+    .contact-icon {
+        fill: currentColor;
+    }
+
+    .mail-list-item-link {
+        fill: var(--titel-text-color);
+
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .contact-phone-number {
+
+        transition: color var(--transition-dur-and-func);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+
+
+    }
+
+
+}
+
+
+
 // .contact-phone-number {
 //     @extend %aling;
 //     column-gap: 10px;
@@ -24,6 +75,5 @@
 
 // .mail-list-item-link {
 //     fill: var(--titel-text-color);
-    
-// }
 
+// }
