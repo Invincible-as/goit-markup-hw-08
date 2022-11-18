@@ -163,20 +163,21 @@ address {
   pointer-events: none;
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
-  padding: 40px;
-  background-color: var(--stock-color);
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 4px; */
+@media screen and (max-width: 767px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+    background-color: var(--stock-color);
+  }
 }
-
+/* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px; */
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -355,6 +356,12 @@ address {
   line-height: 1.7;
   color: var(--titel-text-color);
 }
+@media screen and (max-width: 767px) {
+  .modal-form-text {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
 
 .modal-form-treaty {
   font-weight: 400;
@@ -362,6 +369,12 @@ address {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+@media screen and (max-width: 767px) {
+  .modal-form-treaty {
+    font-size: 12px;
+    line-height: 1.2;
+  }
 }
 
 .modal-form-submit {
@@ -685,33 +698,49 @@ address {
     color: var(--accent-color);
   }
 }
-.hero {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--hero-color);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay)), to(var(--overlay))), url("../images/img_hero.jpg");
-  background-image: linear-gradient(to right, var(--overlay), var(--overlay)), url("../images/img_hero.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-clip: border-box;
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  .hero {
+    max-width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--hero-color);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay)), to(var(--overlay))), url("../images/img_hero.jpg");
+    background-image: linear-gradient(to right, var(--overlay), var(--overlay)), url("../images/img_hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    background-image: url("../images/img_hero-mobile.jpg");
+  }
+  .hero__titel {
+    color: var(--stock-color);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .page-hero-container {
+    text-align: center;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url("../images/img_hero-mobile@2x.jpg");
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url("../images/img_hero-tablet.jpg");
-  }
-}
-@media screen and (max-width: 767px) {
-  .hero {
-    background-image: url("../images/img_hero-mobile.jpg");
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .hero {
-    background-image: url("../images/img_hero-mobile@2x.jpg");
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -724,27 +753,6 @@ address {
     background-image: url("../images/img_hero@2x.jpg");
   }
 }
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-.hero .hero__titel {
-  color: var(--stock-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
-
-.page-hero-container {
-  text-align: center;
-}
-
 .modal-open-btn {
   color: var(--stock-color);
   background-color: var(--accent-color);

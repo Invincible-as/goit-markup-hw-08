@@ -1,32 +1,54 @@
-.hero {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--hero-color);
-    background-image: linear-gradient(to right,
-            var(--overlay),
-            var(--overlay)),
-        url('../images/img_hero.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-clip: border-box;
+// 767 Mobile + 
 
-    @media screen and (min-width: 768px) {
-        background-image: url('../images/img_hero-tablet.jpg');
+@media screen and (max-width: 767px) {
+
+    .hero {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+
+    .hero {
+
+        max-width: 480px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--hero-color);
+        background-image: linear-gradient(to right,
+                var(--overlay),
+                var(--overlay)),
+            url('../images/img_hero.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-clip: border-box;
+        background-image: url('../images/img_hero-mobile.jpg');
+    }
+
+    .hero__titel {
+        color: var(--stock-color);
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.6;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+
 
     }
 
-        @media screen and (max-width: 767px) {
-            background-image: url('../images/img_hero-mobile.jpg');
-    
-        }
+    .page-hero-container {
 
+        text-align: center;
+
+
+
+    }
 
 }
-
-// 767 Mobile + 
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -38,6 +60,14 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 // 768 Tablet +
 
+@media screen and (min-width: 768px) {
+    .hero {
+
+        background-image: url('../images/img_hero-tablet.jpg');
+    }
+
+}
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -46,47 +76,64 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     }
 }
 
+
 // 1200 Desctop + 
 
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
-screen and (min-resolution: 2dppx) and (min-width: 1200px)
-{
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
         background-image: url('../images/img_hero@2x.jpg');
     }
 }
 
 
-.hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-
-.hero__titel {
-        color: var(--stock-color);
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.4;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        width: 696px;
-        margin-left: auto;
-        margin-right: auto;
-
-        margin-bottom: 30px;
+// .hero {
+//     max-width: 1600px;
+//     height: 600px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background-color: var(--hero-color);
+//     background-image: linear-gradient(to right,
+//             var(--overlay),
+//             var(--overlay)),
+//         url('../images/img_hero.jpg');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     background-clip: border-box;
 
 
-    }
-
-    
-
-}
+// }
 
 
 
-.page-hero-container {
-    text-align: center;
+// .hero__titel {
+//     color: var(--stock-color);
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.4;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     width: 696px;
+//     margin-left: auto;
+//     margin-right: auto;
+
+//     margin-bottom: 30px;
 
 
-}
+// }
+
+// .page-hero-container {
+
+//     text-align: center;
+
+
+
+// }
+
+//  .hero {
+//      padding-top: 200px;
+//      padding-bottom: 200px;
+//  }
