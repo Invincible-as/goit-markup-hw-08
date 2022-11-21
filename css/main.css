@@ -170,7 +170,7 @@ address {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 450px;
+    width: 400px;
     height: 609px;
     padding: 40px;
     background-color: var(--stock-color);
@@ -358,7 +358,7 @@ address {
 }
 @media screen and (max-width: 767px) {
   .modal-form-text {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.2;
   }
 }
@@ -372,7 +372,7 @@ address {
 }
 @media screen and (max-width: 767px) {
   .modal-form-treaty {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.2;
   }
 }
