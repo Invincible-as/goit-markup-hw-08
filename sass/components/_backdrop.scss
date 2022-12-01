@@ -12,6 +12,8 @@
     pointer-events: auto;
     transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
 
+    overflow-y: scroll;
+
     &.is-hidden {
         visibility: hidden;
         opacity: 0;

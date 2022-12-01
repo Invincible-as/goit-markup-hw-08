@@ -105,6 +105,10 @@
 
 
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 
@@ -148,31 +152,23 @@
 
 .modal-form-text {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 1.7;
 
     color: var(--titel-text-color);
 
-    @media screen and (max-width: 767px) {
-        font-size: 10px;
-        line-height: 1.2;
 
-    }
 }
 
 .modal-form-treaty {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 
     color: var(--accent-color);
 
-    @media screen and (max-width: 767px) {
-        font-size: 10px;
-        line-height: 1.2;
 
-    }
 
 }
 
@@ -195,6 +191,24 @@
 
         color: var(--stock-color);
         background-color: var(--accent-color);
+
+
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .modal-form-text {
+        font-size: 9px;
+
+    }
+
+    .modal-form-treaty {
+
+        font-size: 9px;
+
+
 
 
     }
