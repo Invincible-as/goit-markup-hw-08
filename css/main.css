@@ -920,6 +920,21 @@ address {
   line-height: 1.2;
 }
 
+@media screen and (max-width: 767px) {
+  .section-do {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-do {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-do {
+    display: block;
+  }
+}
 .section__team {
   background-color: var(--tem-color);
 }
