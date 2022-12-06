@@ -809,6 +809,7 @@ address {
   font-size: 14px;
   line-height: 1.15;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .title-list {
@@ -842,8 +843,8 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
-  height: 120px;
+  width: 450px;
+  height: 226px;
   border-radius: 4px;
   background-color: var(--tem-color);
   margin-bottom: 30px;
@@ -865,6 +866,21 @@ address {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .sentence__icon {
+    width: 354px;
+    height: 224px;
+  }
+  .sentence__list .titel {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sentence__icon {
+    width: 270px;
+    height: 120px;
+  }
+}
 .section-do {
   background-color: var(--stock-color);
   padding-bottom: 94px;
