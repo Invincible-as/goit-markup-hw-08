@@ -97,6 +97,32 @@
 }
 
 
+@media screen and (max-width: 767px) {
+
+    .team-list-link-img {
+        min-width: 100%;
+    }
+
+    .section-team__list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+
+    .section-team__list {
+        justify-content: center;
+
+    }
+}
+
+
 
 
 // .section__team {

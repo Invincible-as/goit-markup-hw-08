@@ -87,9 +87,9 @@ address {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 425px) {
   .container {
-    width: 480px;
+    width: 425px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -849,7 +849,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 450px;
+  min-width: 100%;
   height: 226px;
   border-radius: 4px;
   background-color: var(--tem-color);
@@ -886,7 +886,6 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1040,6 +1039,26 @@ address {
   padding: 12px;
 }
 
+@media screen and (max-width: 767px) {
+  .team-list-link-img {
+    min-width: 100%;
+  }
+  .section-team__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-team__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .clients__titel {
   color: var(--primery-text-color);
   font-weight: 700;
