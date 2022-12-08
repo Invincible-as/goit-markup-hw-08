@@ -1,31 +1,5 @@
 // 0 - 767
 
-.sentence__list {
-
-    display: flex;
-    flex-direction: column;
-    gap: 30px
-}
-
-.section-sentence__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-
-}
-
-.sentence__icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 450px;
-    height: 226px;
-    border-radius: 4px;
-    background-color: var(--tem-color);
-    margin-bottom: 30px;
-}
 
 
 .sentence__list .titel {
@@ -44,83 +18,96 @@
     font-size: 14px;
     line-height: 1.7;
 
+
+
+}
+
+.sentence__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+
+}
+
+.section-sentence__item {
+    flex-basis: calc((100% - 90px) / 4);
+
+
+}
+
+.sentence__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 450px;
+    height: 226px;
+    border-radius: 4px;
+    background-color: var(--tem-color);
+    margin-bottom: 30px;
+
+
+}
+
+.sentence__icon-list-item {
+
+
+    padding: 25px 100px;
+
+
+
+}
+
+.section-sentence__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
 }
 
 
-// .sentence__list {
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: 30px;
+@media screen and (max-width: 767px) {
+    .sentence__list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 
+    .sentence__icon {
+        flex-direction: column;
+        min-width: 100%;
+    }
 
-// }
-
-// .section-sentence__item {
-//     flex-basis: calc((100% - 90px) / 4);
-
-
-// }
-
-// .sentence__icon {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 450px;
-//     height: 226px;
-//     border-radius: 4px;
-//     background-color: var(--tem-color);
-//     margin-bottom: 30px;
-
-
-// }
-
-// .sentence__icon-list-item {
-
-
-//     padding: 25px 100px;
-
-
-
-// }
-
-// .section-sentence__list {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-
-
-// }
-
-
+}
 
 
 
 //  768 - 1200
 
 
-// @media screen and (min-width: 768px) {
-//     .sentence__icon {
+@media screen and (min-width: 768px) {
+    .sentence__icon {
 
-//         width: 354px;
-//         height: 224px;
+        width: 354px;
+        height: 224px;
 
-//     }
+    }
 
-//     .sentence__list .titel {
-//         text-align: start;
-//     }
+    .sentence__list .titel {
+        text-align: start;
+    }
 
-// }
+}
 
 
 //  1200+ 
 
-// @media screen and (min-width: 1200px) {
-//     .sentence__icon {
+@media screen and (min-width: 1200px) {
+    .sentence__icon {
 
-//         width: 270px;
-//         height: 120px;
+        width: 270px;
+        height: 120px;
 
-//     }
+    }
 
-// }
+}
