@@ -16,3 +16,32 @@
 .subtitel {
     margin-bottom: 10px;
 }
+
+
+@media screen and (max-width: 767px) {
+
+    .section-titel {
+        font-size: 28px;
+        line-height: 1.2;
+
+    }
+}
+
+// .section-titel {
+//     color: var(--primery-text-color);
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.2;
+//     text-align: center;
+//     margin-bottom: 50px;
+
+// }
+
+// .section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
+// .subtitel {
+//     margin-bottom: 10px;
+// }
