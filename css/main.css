@@ -1125,7 +1125,7 @@ address {
     gap: 30px;
   }
   .clients-list__item-link {
-    min-width: 100%;
+    width: 150px;
   }
   .clients-list__item:not(:last-child) {
     margin-right: 0px;
@@ -1412,7 +1412,7 @@ address {
     margin-right: 0px;
   }
   .footer-form-input {
-    min-width: 395px;
+    min-width: 100%;
   }
 }
 .footer-social-list {
