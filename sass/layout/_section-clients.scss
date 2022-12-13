@@ -24,8 +24,8 @@
     transition: background-color var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
 
 
-&:hover,
-&:focus {
+    &:hover,
+    &:focus {
 
         border-color: var(--accent-color);
 
@@ -39,10 +39,10 @@
     transition: fill var(--transition-dur-and-func);
 
     .clients-list__item-link:hover &,
-     .clients-list__item-link:focus & {
-    
-            fill: var(--accent-color);
-        }
+    .clients-list__item-link:focus & {
+
+        fill: var(--accent-color);
+    }
 }
 
 .clients-list__item:not(:last-child) {
@@ -53,3 +53,58 @@
     padding: 16px 32px;
 }
 
+// 0 - 767
+
+@media screen and (max-width: 767px) {
+
+    .clients__titel {
+        font-size: 28px;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .clients-list {
+
+        flex-flow: wrap;
+        gap: 30px;
+    }
+
+    .clients-list__item-link {
+        min-width: 100%;
+
+
+    }
+
+    .clients-list__item:not(:last-child) {
+        margin-right: 0px;
+    }
+
+
+}
+
+// 0 - 767
+
+@media screen and (min-width: 768px) {
+
+    .clients__titel {
+        font-size: 28px;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .clients-list {
+
+        flex-flow: wrap;
+        gap: 30px;
+    }
+
+    .clients-list__item-link {
+        min-width: 100%;
+
+
+    }
+
+    .clients-list__item:not(:last-child) {
+        margin-right: 0px;
+    }
+}
