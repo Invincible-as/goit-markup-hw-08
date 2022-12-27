@@ -53,9 +53,24 @@
 
 @media screen and (max-width: 767px) {
 
-    .footer-social-titel {
-        text-align: center;
+    .foter-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .footer-social-list {
+        margin-right: 0px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .foter-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-social-list {
