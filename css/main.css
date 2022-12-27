@@ -1480,7 +1480,7 @@ address {
     margin-right: 0px;
   }
   .footer-form-input {
-    min-width: 450px;
+    max-width: 450px;
   }
 }
 .footer-social-list {
